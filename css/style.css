@@ -1,0 +1,323 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2A2E43;
+    position: block;
+    width: 375px;
+    font-size: 10px;
+    font-family: 'SF Pro Display', 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    padding: 0 0;
+}
+
+.container {
+    width: 375px;
+    position: block;
+    margin: 0;
+    background-color: white;
+}
+
+#background  {
+    margin: 0;
+    padding: 10px 15px;
+    width: 375px;
+    height: fit-content;
+    background: #DBDBDB;
+    background: -moz-linear-gradient(top, #DBDBDB 0%, #E6E6E6 50%, #F5F5F5 100%);
+    background: -webkit-linear-gradient(top, #DBDBDB 0%, #E6E6E6 50%, #F5F5F5 100%);
+    background: linear-gradient(to bottom, #DBDBDB 0%, #E6E6E6 50%, #F5F5F5 100%);
+ }
+
+h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.3;
+    
+}
+
+h4 {
+    font-size: 1em;
+    font-weight:500;
+    text-transform: capitalize;
+}
+p {
+    font-size: 0.8em;
+    font-weight: normal;
+    text-transform: capitalize;
+    /* padding-left: 5%; */
+}
+
+.top {
+    position: relative;
+    display: inline-block;
+    width: 375px;
+    padding: 0 0;
+    margin: 0 0;
+}
+.top img {
+  margin: 0;
+  padding: 0;
+}
+
+/*  BB Header Text */
+.top .text_head {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    right: 0;        
+    text-align: center;
+    top: 60%;
+}
+
+/**/
+/* Alignment for Progress Bar */
+.destination__progress_bar--stacked, .progress_bar--stacked, .destination__progress_bar, .progress_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px 0 10px;
+  font-size: 42px;
+}
+/* progress bar */
+.destination__progress_bar--stacked, .progress_bar--stacked {
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* ol info */
+.destination__textinfo, .textinfo {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+/* Destination Text */
+.textinfo__item span {
+  display: block;
+  font-size: 12px;
+  text-align: left;
+  font-weight: normal;
+}
+
+/* Overall style for the container */
+.destination {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+.destination__header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #eee;
+}
+.destination__header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 40px;
+  height: 30px;
+  margin-left: -20px;
+  margin-top: -21px;
+  border-radius: 100%;
+  background: #ccc;
+  z-index: 1;
+}
+.destination__header__title {
+  margin: 0;
+}
+/*  Destination Box */
+.destination__body {
+  display: flex;
+  overflow: hidden;
+  border-top: #999 solid 2px;
+  border-bottom: 3px solid #999;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.destination__textinfo {
+  flex: 1 0;
+  padding: 10px;
+}
+.destination__info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 5px 15px 0 0;
+}
+
+/* horizontal line – Nav */
+.destination__info__hrz-line {
+  margin: 5px 15px 0 0;
+  border-top: 1.5px solid lightgray;
+  color: #999;
+}
+.fas {
+  color:#999;
+}
+
+.destination__info__meta {
+  margin: 0 0;
+  padding: 5px 0;
+  font-size: 14px;
+  text-align: right; 
+}
+/* /End of Destination*/
+
+
+/* Header Bus-line directions & routes */
+.bus-header {
+  margin: 10px 0 5px 0;
+  padding: 0 10px;
+  align-content: center;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 20px 30px auto 80px;
+  grid-gap: 1px;
+  background-color: #2A2E43;
+  border-radius: 8px;
+}
+
+.bus-header > li {
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+}
+
+.bus-header img {
+  width: 75%;
+  height: 75%;
+}
+/* /Header Bus-line directions & routes */
+
+
+/*  Busline Directions  */
+.bus-container {
+  margin: 10px 0 0 0;
+}
+
+.direction {
+  display: flex;
+  margin-top: 20px;
+  color:  #2A2E43;
+}
+
+.header-flex h2 {
+  display: inline;
+  margin-left: 10px;
+}
+
+.line-flex {
+  flex: 1;
+}
+  hr {
+    border: 1.5px solid;
+    margin: 5px 10px 0;
+    border-radius: 2px;
+}
+/*  /Busline Directions  */
+
+ 
+
+/*  Start Bus Routs Chevron */
+.bus-line_routs img {
+  width: 12px;
+  height: 12px;
+} 
+/*  Hover */
+.bus-header_routs-bottom:hover, .bus-header_routs-mid:hover, .bus-header_routs-single:hover, .bus-header_routs-top:hover,
+.bus-header_routs-bottom_os:hover, .bus-header_routs-mid_os:hover, .bus-header_routs-single_os:hover, .bus-header_routs-top_os:hover {
+  background-color: #2A2E43;
+}
+/*  /Hover */
+
+/* box display */
+.bus-header_routs-top, .bus-header_routs-top_os, .bus-header_routs-mid_os, .bus-header_routs-bottom, .bus-header_routs-bottom_os, .bus-header_routs-single {
+  padding: 0 10px;
+  display: grid;
+  grid-gap: 2px;
+  background-color: white;
+  height: 40px;
+  margin: 5px 0 0.5px 0;
+  border-color: #999;
+}
+.bus-header_routs-mid_os {
+  margin-top: 0.5;
+}
+
+.bus-header_routs-single {
+  border-radius: 8px;
+  border-top: solid 1px ;
+  border-bottom: solid 2px;
+}
+
+.bus-header_routs-top, .bus-header_routs-top_os {
+  border-radius: 8px 8px 0 0;
+  /* margin: 5px 0 2px 0; */
+  border-top: solid 1px;
+}
+
+.bus-header_routs-bottom, .bus-header_routs-bottom_os {
+  border-radius: 0 0 8px 8px;
+  border-bottom: solid 2px;
+}
+/* /box display */
+
+
+/* grid display */
+.bus-header_routs-top, .bus-header_routs-bottom, .bus-header_routs-single {
+  grid-template-columns: 20px auto 80px 20px;
+  
+}
+.bus-header_routs-top_os, .bus-header_routs-mid_os, .bus-header_routs-bottom_os{
+  grid-template-columns: 20px auto 105px 20px;
+}
+
+.bus-header_routs-top > li, .bus-header_routs-top_os > li, .bus-header_routs-mid_os > li, 
+.bus-header_routs-bottom > li, .bus-header_routs-bottom_os > li, .bus-header_routs-bottom > li, .bus-header_routs-single > li {
+  text-align: center;
+  padding: 12px 0 0 0;
+  color: #707070;
+}
+/* /grid display */
+
+
+footer #bottom-line hr {
+  margin: 40px 0 20px 0;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: solid 2px #999;
+  border-radius: 2px;
+}
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+    body {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
